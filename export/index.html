@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Reveal JS presentation</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reset.css">
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/reveal.css">
+
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	  <!-- highlight Theme -->
+  	
+	  <link rel="stylesheet" href="libs/highlight.js/11.3.1/styles/monokai.min.css">
+	
+	
+		
+	<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/chalkboard/style.css">
+	
+	
+	
+		<link rel="stylesheet" href="libs/reveal.js/4.1.3/plugin/customcontrols/style.css">
+	
+	<link rel="stylesheet" href="libs/styles/tasklist.css">
+
+
+
+  <!-- Revealjs Theme -->
+  
+  	<link rel="stylesheet" href="libs/reveal.js/4.1.3/theme/black.css" id="theme">
+  
+  
+
+
+  <!-- Revealjs Theme -->
+  
+
+ 
+</head>
+
+<body>
+  
+
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      
+
+
+    
+        <section >
+            
+            <style type="text/css">
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    text-transform: none;
+  }
+</style>
+<h2>プログラマにとっての「適度な運動」とは</h2>
+<p>2022/05/14 @Fukuoka.rb 256回 LT大会</p>
+<p>黒木 慎介</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>Fukuoka.rb 0x100回 おめでとうございます！！</h2>
+<p><img src="images/kusudama.png" alt=""></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>自己紹介</h2>
+<ul>
+<li>1981年3月、福岡県北九州市生まれ（41歳）</li>
+<li>RubyとRails（など）で仕事してます
+<ul>
+<li>2010-</li>
+<li>最近はTypeScript+Reactも書くようになった</li>
+</ul>
+</li>
+<li>プログラミングを教える仕事も
+<ul>
+<li>2019-</li>
+<li>大名エンジニアカレッジ 2021年度Webエンジニア基礎コースメンター</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>自己紹介</h2>
+<ul>
+<li><span style="color:black">1981年3月、福岡県北九州市生まれ</span>（41歳）</li>
+<li>.
+<ul>
+<li>.</li>
+<li>.</li>
+</ul>
+</li>
+<li>.
+<ul>
+<li>.</li>
+<li><span style="color:black">大名エンジニアカレッジ 2021年度Webエンジニア基礎コースメンター</span></li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1>41歳</h1>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>41歳</h2>
+<ul>
+<li>言い逃れの余地なくおっさん</li>
+<li>プログラマ35歳定年説とかあった
+<ul>
+<li>一応なんとかなっててありがたい</li>
+</ul>
+</li>
+<li>健康維持が大変</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>健康維持が大変</h2>
+<ul>
+<li>20代の頃と比べると…
+<ul>
+<li>夜ふかしするときつい</li>
+<li>食べ過ぎるときつい</li>
+<li>変な姿勢で仕事してるときつい</li>
+<li>などなど</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>健康維持が大変</h2>
+<p>色々調べても試行錯誤しても結局重要なのは</p>
+<p>「適度な運動」</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>適度な運動</h2>
+<ul>
+<li>散歩（ドラクエウォーク）</li>
+<li>ランニング</li>
+<li>自転車</li>
+<li>リングフィット</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>健康維持が大変（プログラマとして）</h2>
+<ul>
+<li>20代の頃と比べると…
+<ul>
+<li>頭が回らなくなってきた気がする
+<ul>
+<li>集中力、注意力、短期記憶</li>
+</ul>
+</li>
+<li>新しい事を学習しづらくなった気がする
+<ul>
+<li>なまじ今までのスキルでも仕事できてしまうがばかりに</li>
+</ul>
+</li>
+<li>などなど</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>健康維持が大変（プログラマとして）</h2>
+<p>「適度な運動」？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>適度な運動（プログラマとして）</h2>
+<p>コードを書く（そりゃそうだ）</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>コードを書く</h2>
+<ul>
+<li>仕事でやってる時にはやりにくい寄り道ができる
+<ul>
+<li>開発環境</li>
+<li>言語やフレームワークの新しい機能</li>
+<li>1つのリファクタリングの是非について1時間考えたって自由</li>
+<li>これなんで動くの？みたいなのを掘り下げたって自由</li>
+</ul>
+</li>
+<li>自分が使うものを作るとモチベーションを維持しやすい
+<ul>
+<li>bot</li>
+<li>勤怠管理</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>コードを書く、と言ってもさあ！</h2>
+<p><span style="color:red">そんな都合よくお題見つからねえよ！！</span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1>そんなあなたに！！</h1>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>プログラマにとっての「適度な運動」とは</h2>
+<p>2022/05/14 @Fukuoka.rb 256回 LT大会</p>
+<p>黒木 慎介</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>プログラマにとっての「適度な運動」としての<span style="color:lightgreen">競技プログラミング</span></h2>
+<p>2022/05/14 @Fukuoka.rb 256回 LT大会</p>
+<p>黒木 慎介</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>競技プログラミング</h2>
+<ul>
+<li>問題が提供されるので「コード書きたいけど書きたいコードがない」状況が解消する</li>
+<li>始めるしきいは思ってるのの10倍低い</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>誤解を解きたい</h2>
+<ul>
+<li>難しい
+<ul>
+<li>難しい問題もあるけど、最初の問題は簡単で、1問くらいはだいたい解ける</li>
+</ul>
+</li>
+<li>ガチらないといけない
+<ul>
+<li>健康維持目的なら自分なりで良い</li>
+<li>ランニングしよる人がみんなマラソン選手目指しとるわけじゃなかよね？</li>
+</ul>
+</li>
+<li>続けなきゃいけない
+<ul>
+<li>確かに続けたほうがスコアは伸びる</li>
+<li>でも私は作りたい物ができたタイミングでやめました</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>AtCoder</h2>
+<ul>
+<li>競技プログラミング大手</li>
+<li>ここでやる前提で話します</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>必要なこと</h2>
+<ul>
+<li>アカウント作成</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>問題を解いてみよう</h2>
+<p><a href="https://atcoder.jp/contests/practice">https://atcoder.jp/contests/practice</a></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>概要</h2>
+<ul>
+<li>「こういう入力が与えられるので、こういう出力を返してください」
+<ul>
+<li>計算、並び替え、探索、などなど</li>
+</ul>
+</li>
+<li>使うのは標準入力と標準出力
+<ul>
+<li>知らない人は少し慣れは必要かも</li>
+</ul>
+</li>
+<li>毎週末にみんなが「いっせーの」で解いて、得点を競う
+<ul>
+<li>いつでも解ける問題も置いてある</li>
+</ul>
+</li>
+<li><span style="color:red">Ruby</span>を含めて、だいたいどんな言語でも挑戦できる</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>いいところ</h2>
+<ul>
+<li>自分のウデマエが数値化されるので燃える
+<ul>
+<li>最初のうちは割とホイホイ上がるのでやる気が出る</li>
+</ul>
+</li>
+<li>工夫のしがいがある</li>
+<li>安全に追い詰められることができる</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>ウデマエ/得点</h2>
+<ul>
+<li>1回のコンテストでだいたい8問（100分）、難しいほど得点が高い
+<ul>
+<li>私がやってた時は6問だった</li>
+</ul>
+</li>
+<li>タイムも計測していて、同点なら早いほうが順位が高い</li>
+<li>問題の難易度は揺れるので、自分のウデマエはレーティング（偏差値みたいなやつ）で計算される</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>ウデマエ/レーティング</h2>
+<p><img src="images/rating.png" alt=""></p>
+<p>これで4000人中1000位とかそのへん</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/順位の決まり方</h2>
+<ul>
+<li>得点の高い人が上</li>
+<li>同点なら解いた時間が短い人が上</li>
+<li>提出して正解でなかった場合、解いた時間に5分ぶんのペナルティが加算
+<ul>
+<li>実行した結果が正しくない</li>
+<li>制限時間（2秒とか）の間に実行結果を出せない</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/順位の決まり方</h2>
+<ul>
+<li>.</li>
+<li>.</li>
+<li>提出して正解でなかった場合、解いた時間に5分ぶんのペナルティが加算
+<ul>
+<li>実行した結果が正しくない</li>
+<li><span style="color:black">制限時間（2秒とか）の間に実行結果を出せない</span></li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/最初から正しいコードを提出したい</h2>
+<ul>
+<li>手元で動作確認してから出せば良い</li>
+<li>そのための環境を作って置くと楽</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/私がやったこと</h2>
+<ul>
+<li>手元で動作確認してから出せば良い</li>
+<li>そのための環境を作って置くと楽</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/私がやったこと</h2>
+<p><img src="images/guard.png" alt=""></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/なんで間違ってるのかわからん時</h2>
+<ul>
+<li>デバッグしたい</li>
+<li>でも余計な出力をすると不正解になるので、提出時にはデバッグプリントしない必要がある</li>
+<li>そのための環境を作って置くと楽</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/私がやったこと</h2>
+<p><img src="images/prepro.png" alt=""></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>工夫/準備いらないんじゃないん？</h2>
+<ul>
+<li>必要なわけじゃない</li>
+<li>でもこういうのを考えるのも楽しい</li>
+<li>やりたくなったらやる、で良い</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>安全に追い詰められることができる</h2>
+<ul>
+<li>時間制限</li>
+<li>でも、間に合わなくても誰にも迷惑をかけない</li>
+<li>仕事で追い詰められた時の訓練として</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>おしまい</h2>
+<p>enjoy!</p>
+
+            </section>
+    
+
+
+    </div>
+
+
+  </div>
+
+  	
+	<script src="libs/reveal.js/4.1.3/reveal.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/zoom/zoom.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/notes/notes.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/search/search.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/markdown/markdown.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/highlight/highlight.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/menu/menu.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/math/math.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/fullscreen/plugin.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/plugin.js"></script>
+  	<script src="libs/reveal.js/4.1.3/plugin/animate/svg.min.js"></script>
+  
+  	<script src="libs/reveal.js/4.1.3/plugin/anything/plugin.js"></script>
+	  <script src="libs/reveal.js/4.1.3/plugin/anything/Chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/d3.v3.min.js"></script>				
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3.patch.js"></script>			
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/queue.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/d3/topojson.v1.min.js"></script>		
+	<script src="libs/reveal.js/4.1.3/plugin/anything/function-plot.js"></script>
+
+ <!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/plugin.js"></script>  -->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/recorder.js"></script>-->
+<!--	<script src="libs/reveal.js/4.1.3/plugin/audio-slideshow/RecordRTC.js"></script>-->
+
+<script src="libs/reveal.js/4.1.3/plugin/chalkboard/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/customcontrols/plugin.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/embed-tweet/plugin.js"></script>
+
+	<script src="libs/reveal.js/4.1.3/plugin/chart/chart.min.js"></script>
+	<script src="libs/reveal.js/4.1.3/plugin/chart/plugin.js"></script>
+
+  <script>
+
+		const printPlugins = [
+			RevealNotes, 
+			RevealHighlight,
+			RevealMath,
+			RevealAnimate,
+			RevealChalkboard, 
+			RevealEmbedTweet,
+			RevealChart,
+		];
+
+		const plugins =  [...printPlugins,
+		RevealZoom, 
+		RevealSearch, 
+				RevealMarkdown, 
+				RevealMenu, 
+				RevealFullscreen,
+				RevealAnything,
+				//RevealAudioSlideshow,
+				//RevealAudioRecorder,
+				RevealCustomControls, 
+				// poll
+				// question
+				// seminar
+				 ]
+
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			controlsLayout: 'bottom-right',
+			controlsBackArrows: 'faded',
+			progress: true,
+			slideNumber: false,
+			//#showSlideNumber "all" "print" "speaker"
+			hash: true,//#  hash: false,
+			//# respondToHashChanges: true,
+			//# history: false,
+			keyboard: true,
+			//#keyboardCondition: null,
+			overview: true,
+			center: true,
+			touch: true,
+			loop: false,
+			rtl: false,
+			//#navigationMode: 'default', linear grid
+			shuffle: false,
+			fragments: true,
+			fragmentInURL: false,
+			embedded: false,
+			help: true,
+			//#pause: true
+			showNotes: false,
+			autoPlayMedia: false, // TODO fix this to a nullable value
+			//#preloadIframes: null. true false
+			//#autoAnimate: true
+			//#autoAnimateMatcher: null,
+			//#autoAnimateEasing: 'ease',
+			//autoAnimateDuration: 1.0,
+			//#autoAnimateUnmatched: true
+			//#autoAnimateStyles: []
+			autoSlide: 0, // TODO fix this to a falseable value
+			autoSlideStoppable: true,
+			autoSlideMethod: '0',
+			defaultTiming: 120,
+			mouseWheel: false,
+			//#previewLinks: false
+			//#postMessage: true,  // TODO : this can cause issues with the vscode api ???
+			//#postMessageEvents: false,
+			//#focusBodyOnPageVisibilityChange: true,
+			transition: 'none',
+			transitionSpeed: 'default',
+			backgroundTransition: 'fade',
+			//#pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+			//#pdfSeparateFragments: true,
+			//#pdfPageHeightOffset: -1,
+			viewDistance: 3,
+			//#mobileViewDistance: 2,
+			display: 'block',
+			//#hideInactiveCursor: true,
+			//#hideCursorTime: 5000
+
+			// Parallax Background
+			parallaxBackgroundImage: '',
+			parallaxBackgroundSize: '',
+			parallaxBackgroundHorizontal: 0,
+			parallaxBackgroundVertical: 0,
+			
+			//Presentation Size
+			width: 1920,
+			height: 1200,
+			margin: 0.04,
+			minScale: 0.2,
+			maxScale: 2,
+			disableLayout: false,
+
+			audio: {
+				prefix: 'audio/', 	// audio files are stored in the "audio" folder
+				suffix: '.ogg',		// audio files have the ".ogg" ending
+				textToSpeechURL: null,  // the URL to the text to speech converter
+				defaultNotes: false, 	// use slide notes as default for the text to speech converter
+				defaultText: false, 	// use slide text as default for the text to speech converter
+				advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance
+				autoplay: false,	// automatically start slideshow
+				defaultDuration: 5,	// default duration in seconds if no audio is available
+				defaultAudios: true,	// try to play audios with names such as audio/1.2.ogg
+				playerOpacity: 0.05,	// opacity value of audio player if unfocused
+				playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls
+				startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
+			},
+			
+			chalkboard: { // font-awesome.min.css must be available
+					//src: "chalkboard/chalkboard.json",
+					storage: "chalkboard-demo",
+				},
+			
+			customcontrols: {
+					controls: [
+      						{
+						  id: 'toggle-overview',
+						  title: 'Toggle overview (O)',
+						  icon: '<i class="fa fa-th"></i>',
+						  action: 'Reveal.toggleOverview();'
+						}
+						,
+						{ icon: '<i class="fa fa-pen-square"></i>',
+						  title: 'Toggle chalkboard (B)',
+						  action: 'RevealChalkboard.toggleChalkboard();'
+						},
+						{ icon: '<i class="fa fa-pen"></i>',
+						  title: 'Toggle notes canvas (C)',
+						  action: 'RevealChalkboard.toggleNotesCanvas();'
+						}
+				]
+			},
+			chart: {
+					defaults: { 
+						color: 'lightgray', // color of labels
+						scale: { 
+							beginAtZero: true, 
+							ticks: { stepSize: 1 },
+							grid: { color: "lightgray" } , // color of grid lines
+						},
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+			},
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				anything: [ 
+				{
+		className: "plot",
+		defaults: {width:500, height: 500, grid:true},
+		initialize: (function(container, options){ options.target = "#"+container.id; functionPlot(options) })
+	 },
+	 {
+		className: "chart",  
+		initialize: (function(container, options){ container.chart = new Chart(container.getContext("2d"), options);  })
+	 },
+	 {
+		className: "anything",
+		initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container)} })
+	 },
+					],
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: (window.location.search.match(/print-pdf/gi) ? printPlugins : plugins ) 
+		});
+			
+
+
+	    // Change chalkboard theme : 
+		function changeTheme(input) {
+			var config = {};
+			config.theme = input.value;
+			Reveal.getPlugin("RevealChalkboard").configure(config);
+			input.blur();
+		}
+
+		// // Handle the message inside the webview
+        // window.addEventListener('message', event => {
+
+        //     const message = event.data; // The JSON data our extension sent
+
+        //     switch (message.command) {
+        //         case 'refactor':
+        //             Reveal.toggleHelp();
+        //     }
+        // });
+
+		if (window.location.search.match(/print-pdf-now/gi)) {
+      		setTimeout(() => {
+				window.print();
+			  }, 2500);
+			
+    }
+		
+
+	</script>
+
+</body>
+
+</html>
